@@ -6,26 +6,33 @@ var hex = function(hex) {
 
 exports.livenet = {
   name: 'livenet',
-  magic: hex('f9beb4d9'),
-  addressVersion: 85,
-  privKeyVersion: 73,
+  magic: hex('fac3b6da'),
+  addressVersion: 1e,
+  privKeyVersion: 9e,
   P2SHVersion: 5,
   hkeyPublicVersion: 0x0488b21e,
   hkeyPrivateVersion: 0x0488ade4,
   genesisBlock: {
-    hash: hex('cb3791b779f9dce1ecd0e39c63446778f6a13906efc2de5be79ae8876e74fbc1'),
-    merkle_root: hex('a80b763e1daee04afd3c0f3d232872c25b670cf31af44b3dae2f2241df5a71d4'),
+    hash: hex('7497ea1b465eb39f1c8f507bc877078fe016d6fcb6dfad3a64c98dcc6e1e8496'),
+    merkle_root: hex('ad0f7d7518fc1e90ed28bd0e444ccd8e24d94688355705ed2142006b49d9dd72'),
     height: 0,
-    nonce: 14385103,
+    nonce: 2447652,
     version: 1,
     prev_hash: buffertools.fill(new Buffer(32), 0),
-    timestamp: 1405274442,
-    bits: 0x1d00ffff,
+    timestamp: 1389388394,
+    bits: 0x1e0ffff0,
   },
   dnsSeeds: [
-    'seed.bitmark.co'
+    '127.0.0.1',
+	'74.208.230.160',
+	'216.250.125.121',
+	'195.130.216.149',
+	'96.18.212.86',
+	'188.226.239.21',
+	'54.201.183.106',
+	'213.81.142.62'
   ],
-  defaultClientPort: 9265
+  defaultClientPort: 12024
 };
 
 exports.mainnet = exports.livenet;
